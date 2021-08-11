@@ -1,0 +1,3 @@
+TOKEN = "ODcyNDIyMzY1Mzk5NzY1MDEy.YQpopA.ugfHe9y4CxlUNa6II9K7n6BhIiI"
+
+PREFIX = "."
