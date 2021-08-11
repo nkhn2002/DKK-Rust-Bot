@@ -6,7 +6,7 @@ Currently the only feature is an Enemy Checker, which checks if the enemies you 
 - We mostly use this for offline raiding (Because we are noobs :D)
 
 # How to use:
-1. Add your discord bot token and enemy checker channel id in 'core > settings.py'
+1. Add your discord bot token and enemy checker channel id in 'core > bot_settings.py'
 2. Add your enemies on your list by using the commands on the bot '.enemy add <name>' (Use .help to see all commands)
 3. Set your battlemetrics server id by doing the command '.server set <id>'
  
