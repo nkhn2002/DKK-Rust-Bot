@@ -19,7 +19,7 @@ class EnemyLoop(Cog):
         while True:
             channel = self.bot.get_channel(ENEMY_LOOP_CHANNEL)
             await channel.send(embed=EnemyModule.check_enemy_activity(EnemyModule.get_enemy_list()))
-            await asyncio.sleep(60)
+            await asyncio.sleep(300)
 
 def setup(bot):
     bot.add_cog(EnemyLoop(bot))

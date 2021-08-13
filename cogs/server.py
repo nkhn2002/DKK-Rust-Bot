@@ -1,5 +1,6 @@
 import datetime
 from modules.config import ConfigModule
+from modules.server import ServerModule
 
 from discord.ext import commands
 from discord.ext.commands import Cog
@@ -31,8 +32,14 @@ class Server(Cog):
             ConfigModule.set_server_id(server_id)
             EMBED.title = "Success"
             EMBED.description = "Successfully set server id"
+
+        elif args[0] == "current":
+            embed = ServerModule.server_information()
+            embed.title = "Current Server"
+            embed.description = "_show information about the current server_"
             
-            await ctx.send(embed=EMBED)
+            await ctx.send(embed=embed)
+            
 
         
 
